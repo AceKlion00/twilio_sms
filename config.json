@@ -1,0 +1,28 @@
+{
+    "common": {
+        "viewUrl": "http://localhost:8080/",
+        "apiUrl": "http://localhost:4000/",
+        "uploads": "/users/mohammadrezamostafavi/desktop/bank/api/uploads/"
+    },
+    "database": {
+        "db_host": "localhost",
+        "db_name": "messaging",
+        "db_user": "root",
+        "db_password": "",
+        "db_charset": "utf16_general_ci",
+        "db_timezone": "local"
+    },
+    "security": {
+        "token_public_key": "../sinergia-server/api/configs/public.key",
+        "token_private_key": "../sinergia-server/api/configs/private.key",
+        "token_algorithm": "RS256",
+        "token_issuer": "accounting",
+        "token_expirein": "1h",
+        "key_files_encoding": "utf-8"
+    },
+ "twilio": {
+        "phone": "+13476012801",
+        "token": "1e19e0366421ddc18e8e174bb7ebf0b0",
+        "sid": "ACfb0589237e348241f182e3da53b60129"
+    }
+}
