@@ -10,6 +10,7 @@ const users = require('./api/routes/users');
 const contacts = require('./api/routes/contacts');
 const lists = require('./api/routes/lists');
 const communications = require('./api/routes/communications');
+const smsreply = require('./api/routes/smsreply');
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'web/views'));
@@ -32,6 +33,7 @@ app.use('/api/users', users);
 app.use('/api/contacts', contacts);
 app.use('/api/lists', lists);
 app.use('/api/com', communications);
+app.use('/api/sms', smsreply);
 
 app.use('*', (req, res) => {
     res.status(404).json({ message: "NOT FOUND" });
