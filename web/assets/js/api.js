@@ -1,4 +1,5 @@
 var serviceUrl = 'http://test.sinergiahealth.com:8100/api/';
+var serviceUrl = '/api/';
 
 
 const sendRequestWithToken = (httpMethod, token, arrayData, route, callback) => {
